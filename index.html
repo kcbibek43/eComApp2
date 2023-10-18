@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Montserrat:wght@500&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="primary">
+        <div class="header">
+            <div class="logo-line">
+                <h1 id="logo"><img src="./Capture.PNG" alt="" width="50px" height="50px">Ecom</h1>
+                <div id="navbar">
+                  <div class="categories-line">
+                    <button type="button" class="btn" id = "all">All</button>
+                    <button type="button" class="btn" id = "mens">Mens</button>
+                    <button type="button" class="btn" id = "womens">Womens</button>
+                    <button type="button" class="btn" id = "electronics">Electronics</button>
+                    <button type="button" class="btn" id = "jewelery">Jwellery</button>
+                  </div>
+                  <button type="button" class="btn btn-primary position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                </div>
+            </div>
+        </div>    
+        
+        <div class="dropdown">
+          <button class="dropbtn">Sort Based on</button>
+          <div class="dropdown-content">
+            <button id = "high">Price high to low</button>
+            <button id = "low">Price low to high</button>
+            <button id = "Popularity">Most Popular 🔥</button>
+            <button id = "rating-high">Rating high to low</button>
+            <button id = "rating-low">Rating low to high</button>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Filter By</button>
+          <div class="dropdown-content">
+            <button id = "rating-4">Rating 4.0 to 5</button>
+            <button id = "rating-3">Rating 3.0 to 3.9</button>
+            <button id = "rating-2">Rating 2.0 to 2.9</button>
+            <button id = "rating-1">Rating 1.0 to 1.9</button>
+            <button id = "reset">Reset</button>
+          </div>
+        </div>
+
+
+        <div class="content">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
